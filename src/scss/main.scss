@@ -1,20 +1,51 @@
 @import '~normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
 
 body {
-  background: #white;
-  color: #black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background: white;
+  color: black;
   min-height: 100vh;
+  font-family: 'Nunito';
+  font-weight: 700;
+  font-style: normal;
 }
 
 .skills {
   background: #1070ca;
   color: #ffffff;
+  padding: 56px 144px 200px 112px;
   &_grid {
     display: grid;
     grid-template-areas: 'h2 h2 h2' 'article article article';
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 24px;
+  }
+  &_heading {
+    font-size: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 128px;
+  }
+  &_skills_emoji {
+    font-style: normal;
+    font-size: 64px;
+    line-height: 72px;
+    text-align: center;
+  }
+  &_subtitle {
+    font-weight: 700;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 44px;
+  }
+  &_list {
+    color: #dbeaf7;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 8px;
   }
 }
