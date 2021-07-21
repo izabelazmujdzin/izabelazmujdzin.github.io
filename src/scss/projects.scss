@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+.projects {
+  &_heading {
+    color: #234361;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: Center;
+    align-items: center;
+    padding: 114px 301px 0 301px;
+    margin: 0;
+  }
+  &_description {
+    color: #425a70;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    align-items: center;
+    padding: 40px 301px 128px 301px;
+    margin: 0;
+  }
+  &_list {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-row: 2fr 2fr;
+    &-1 {
+      background: url('../assets/img/Github_project.png');
+
+      width: 580px;
+      height: 324px;
+      right: 604px;
+    }
+    &-2 {
+      background: url('../assets/img/Github_project.png');
+
+      width: 580px;
+      height: 324px;
+      right: 604px;
+    }
+    &-3 {
+      background: url('../assets/img/Github_project.png');
+
+      width: 580px;
+      height: 324px;
+      right: 604px;
+    }
+    &-4 {
+      background: url('../assets/img/Github_project.png');
+
+      width: 580px;
+      height: 324px;
+      right: 604px;
+    }
+  }
+}

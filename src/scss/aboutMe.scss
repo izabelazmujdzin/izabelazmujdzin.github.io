@@ -35,6 +35,10 @@
 }
 
 .aboutMe {
+  align-items: center;
+  padding: 0px;
+  width: 830px;
+  height: 300px;
   &_description {
     color: #234361;
     font-style: normal;
@@ -52,7 +56,29 @@
     font-size: 20px;
     line-height: 40px;
     padding-top: 24px;
+    &-link {
+      color: #4da8ff;
+    }
   }
+}
+.aboutMe::before {
+  content: '';
+  background: url('../assets/img/{.png');
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 82.94px;
+  height: 254.88px;
+}
+
+.aboutMe::after {
+  content: '';
+  background: url('../assets/img/}.png');
+  display: inline-block;
+
+  position: absolute;
+  width: 82.94px;
+  height: 254.88px;
 }
 
 .mail {
@@ -69,4 +95,5 @@
   width: 278px;
   height: 48px;
   margin-top: 68px;
+  text-decoration-line: none;
 }
