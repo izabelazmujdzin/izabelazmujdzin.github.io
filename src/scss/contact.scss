@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+@import '_variables.scss';
+
+.contact {
+  background: #dbeaf7;
+  padding-top: 80px;
+  padding-bottom: 176px;
+  &_heading {
+    color: #234361;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    align-items: center;
+  }
+  &_info {
+    color: #425a70;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 128px;
+  }
+  &_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+  }
+  &_link {
+    position: static;
+    background: white;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    margin: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &_mail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: #4da8ff;
+    border-radius: 64px;
+    font-size: 20px;
+    line-height: 40px;
+    padding: 4px 24px 4px 24px;
+    width: 278px;
+    height: 48px;
+    text-decoration-line: none;
+    margin-left: 110px;
+  }
+}

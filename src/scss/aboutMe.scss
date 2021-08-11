@@ -1,27 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+@import '_variables.scss';
 
-.greeting {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  margin: 80px 229px 229px;
-  margin-bottom: 176px;
+.hero {
+  padding: 74px 0 0 0;
   &_picture {
     display: flex;
     align-items: center;
-    height: 228px;
+    justify-content: center;
   }
   &_picture-img {
-    max-width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 178px;
-    height: 178px;
+    box-sizing: content-box;
+    width: 96px;
+    height: 96px;
     border-radius: 50%;
+    border: 16px solid #f6f9fd;
   }
   &_picture-hello {
+    display: none;
     padding: 16px 19px 16px 19px;
     border-radius: 16px;
     background: #1070ca;
@@ -35,16 +30,15 @@
 }
 
 .aboutMe {
+  text-align: center;
   align-items: center;
-  padding: 0px;
-  width: 830px;
-  height: 300px;
+  margin: 40px 16px 0px 16px;
   &_description {
     color: #234361;
     font-style: normal;
     font-weight: bold;
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 26px;
+    line-height: 32px;
     &-strong {
       color: #1070ca;
     }
@@ -53,37 +47,18 @@
     color: #425a70;
     font-style: normal;
     font-weight: 300;
-    font-size: 20px;
-    line-height: 40px;
-    padding-top: 24px;
+    font-size: 16px;
+    line-height: 32px;
+    padding-top: 16px;
     &-link {
       color: #4da8ff;
+      text-decoration: none;
     }
   }
 }
-.aboutMe::before {
-  content: '';
-  background: url('../assets/img/{.png');
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  width: 82.94px;
-  height: 254.88px;
-}
-
-.aboutMe::after {
-  content: '';
-  background: url('../assets/img/}.png');
-  display: inline-block;
-
-  position: absolute;
-  width: 82.94px;
-  height: 254.88px;
-}
 
 .mail {
-  display: flex;
-  flex-direction: row;
+  display: inline-block;
   align-items: center;
   justify-content: center;
   color: white;
@@ -92,8 +67,99 @@
   font-size: 20px;
   line-height: 40px;
   padding: 4px 24px 4px 24px;
-  width: 278px;
-  height: 48px;
-  margin-top: 68px;
+  margin: 52px 16px 88px 16px;
   text-decoration-line: none;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding: 74px 0 0 0;
+    &_picture {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &_picture-img {
+      box-sizing: content-box;
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      border: 16px solid #f6f9fd;
+    }
+    &_picture-hello {
+      display: flex;
+      padding: 16px 19px 16px 19px;
+      border-radius: 16px;
+      background: #1070ca;
+      width: 230px;
+      color: #ffff;
+      font-size: 32px;
+      font-weight: bold;
+      line-height: 40px;
+      align-items: center;
+    }
+  }
+
+  .aboutMe {
+    text-align: center;
+    align-items: center;
+    margin: 40px 16px 0px 16px;
+
+    &_description {
+      color: #234361;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 40px;
+      &-strong {
+        color: #1070ca;
+      }
+    }
+    &_nav {
+      color: #425a70;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 40px;
+      padding-top: 24px;
+      &-link {
+        color: #4da8ff;
+      }
+    }
+  }
+  .aboutMe::before {
+    content: '';
+    background: url('../assets/img/{.png');
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    width: 82.94px;
+    height: 254.88px;
+  }
+
+  .aboutMe::after {
+    content: '';
+    background: url('../assets/img/}.png');
+    display: none;
+    position: absolute;
+    width: 82.94px;
+    height: 254.88px;
+  }
+
+  .mail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: #4da8ff;
+    border-radius: 64px;
+    font-size: 20px;
+    line-height: 40px;
+    padding: 4px 24px 4px 24px;
+    margin: 52px 16px 92px 16px;
+    width: 278px;
+    height: 48px;
+    text-decoration-line: none;
+  }
 }
