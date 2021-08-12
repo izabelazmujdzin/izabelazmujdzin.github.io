@@ -3,19 +3,19 @@
 
 .hero {
   padding: 74px 0 0 0;
-  &_picture {
+  &__picture {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  &_picture-img {
+  &__picture-img {
     box-sizing: content-box;
     width: 96px;
     height: 96px;
     border-radius: 50%;
     border: 16px solid #f6f9fd;
   }
-  &_picture-hello {
+  &__picture-hello {
     display: none;
     padding: 16px 19px 16px 19px;
     border-radius: 16px;
@@ -33,17 +33,17 @@
   text-align: center;
   align-items: center;
   margin: 40px 16px 0px 16px;
-  &_description {
+  &__description {
     color: #234361;
     font-style: normal;
     font-weight: bold;
     font-size: 26px;
     line-height: 32px;
-    &-strong {
+    &--strong {
       color: #1070ca;
     }
   }
-  &_nav {
+  &__nav {
     color: #425a70;
     font-style: normal;
     font-weight: 300;
@@ -67,26 +67,26 @@
   font-size: 20px;
   line-height: 40px;
   padding: 4px 24px 4px 24px;
-  margin: 52px 16px 88px 16px;
+  margin: 52px 21px 88px 21px;
   text-decoration-line: none;
 }
 
 @media screen and (min-width: 768px) {
   .hero {
     padding: 74px 0 0 0;
-    &_picture {
+    &__picture {
       display: flex;
       align-items: center;
       justify-content: center;
     }
-    &_picture-img {
+    &__picture-img {
       box-sizing: content-box;
       width: 96px;
       height: 96px;
       border-radius: 50%;
       border: 16px solid #f6f9fd;
     }
-    &_picture-hello {
+    &__picture-hello {
       display: flex;
       padding: 16px 19px 16px 19px;
       border-radius: 16px;
@@ -105,7 +105,7 @@
     align-items: center;
     margin: 40px 16px 0px 16px;
 
-    &_description {
+    &__description {
       color: #234361;
       font-style: normal;
       font-weight: bold;
@@ -115,7 +115,7 @@
         color: #1070ca;
       }
     }
-    &_nav {
+    &__nav {
       color: #425a70;
       font-style: normal;
       font-weight: 300;
