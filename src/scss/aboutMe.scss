@@ -3,6 +3,7 @@
 
 .hero {
   padding: 74px 0 0 0;
+  text-align: center;
   &__picture {
     display: flex;
     align-items: center;
@@ -35,6 +36,7 @@
   margin: 40px 16px 0px 16px;
   &__description {
     color: #234361;
+    text-align: center;
     font-style: normal;
     font-weight: bold;
     font-size: 26px;
@@ -61,6 +63,7 @@
   display: inline-block;
   align-items: center;
   justify-content: center;
+
   color: white;
   background: #4da8ff;
   border-radius: 64px;
@@ -151,6 +154,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    text-align: center;
     color: white;
     background: #4da8ff;
     border-radius: 64px;
