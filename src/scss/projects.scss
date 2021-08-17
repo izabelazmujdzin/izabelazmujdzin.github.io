@@ -1,5 +1,81 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 @import '_variables.scss';
+
+.projects {
+  padding: 64px 16px 74px;
+  &__heading {
+    color: #234361;
+    font-size: 36px;
+    line-height: 48px;
+    font-weight: bold;
+    display: block;
+    text-align: Center;
+    align-items: center;
+    margin-bottom: 32;
+  }
+  &__description {
+    color: #425a70;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: center;
+    margin-bottom: 64px;
+  }
+}
+
+.project {
+  box-shadow: (0px 4px 16px rgba(0, 0, 0, 0.25));
+  background: $gray;
+  border-radius: 16px;
+  margin-bottom: 24px;
+  font-family: Roboto mono;
+  font-style: normal;
+  font-weight: normal;
+  &__content {
+    padding: 24px 16px 48px 16px;
+    font-size: 13px;
+    line-height: 24px;
+    color: #a3a3a3;
+    display: block;
+  }
+  &__emoji {
+    margin-top: 26px;
+    margin-left: 18px;
+  }
+  &__window {
+    height: 40px;
+    background: #1e1e1e;
+    border-radius: 16px 16px 0px 0px;
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+  }
+  &__circle {
+    width: 8px;
+    height: 8px;
+    background: #464a4d;
+    display: block;
+    margin: 0px 8px;
+    border-radius: 50%;
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: 102px 1fr;
+    column-gap: 8px;
+  }
+  &__label {
+    color: #808082;
+    display: block;
+    text-align: right;
+  }
+  &__title--color {
+    color: white;
+  }
+  &__link {
+    color: #14b5d0;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .projects {
@@ -21,39 +97,6 @@
       align-items: center;
       padding: 40px 301px 128px 301px;
       margin: 0;
-    }
-    &__list {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      column-gap: 24px;
-      row-gap: 24px;
-      padding: 0 100px 178px 100px;
-      margin: 0;
-      &-1 {
-        background: url('../assets/img/Github_project.png');
-        width: 580px;
-        height: 324px;
-        right: 604px;
-      }
-      &-2 {
-        background: url('../assets/img/Github_project.png');
-        width: 580px;
-        height: 324px;
-        right: 604px;
-      }
-      &-3 {
-        background: url('../assets/img/Github_project.png');
-        width: 580px;
-        height: 324px;
-        right: 604px;
-      }
-      &-4 {
-        background: url('../assets/img/Github_project.png');
-        width: 580px;
-        height: 324px;
-        right: 604px;
-      }
     }
   }
 }

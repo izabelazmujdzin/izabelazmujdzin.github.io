@@ -1,6 +1,65 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
 @import '_variables.scss';
 
+.contact {
+  background: #dbeaf7;
+  padding: 64px 16px 32px 16px;
+  &__heading {
+    color: #234361;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    align-items: center;
+    padding: 0;
+    margin: 0 auto;
+  }
+  &__info {
+    color: #425a70;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 56px;
+    margin: 0 auto;
+  }
+  &__list {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+  }
+  &__link {
+    position: static;
+    background: white;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    margin: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  &__mail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: #4da8ff;
+    border-radius: 64px;
+    font-size: 20px;
+    line-height: 40px;
+    padding: 4px 24px 4px 24px;
+    width: 278px;
+    height: 48px;
+    text-decoration-line: none;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .contact {
     background: #dbeaf7;
