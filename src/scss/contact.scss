@@ -5,6 +5,9 @@
   background: #dbeaf7;
   padding: 64px 16px 88px 16px;
   text-align: center;
+  @media (min-width: $desktop) {
+    padding-top: 80px;
+  }
   &__heading {
     color: #234361;
     font-weight: bold;
@@ -14,6 +17,10 @@
     align-items: center;
     padding: 0;
     margin: 0 auto;
+    @media (min-width: $desktop) {
+      font-size: 48px;
+      line-height: 56px;
+    }
   }
   &__info {
     color: #425a70;
@@ -24,6 +31,10 @@
     align-items: center;
     padding-top: 32px;
     margin: 0 auto;
+    @media (min-width: $desktop) {
+      font-size: 20px;
+      line-height: 40px;
+    }
   }
   &__list {
     display: flex;
@@ -31,6 +42,8 @@
     text-align: center;
     margin: 0;
     padding: 56px 40px 64px 40px;
+    @media (min-width: $desktop) {
+    }
   }
   &__link {
     background: white;
@@ -42,6 +55,13 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    @media (min-width: $desktop) {
+      position: static;
+      margin: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
   &__mail {
     display: flex;
@@ -58,65 +78,17 @@
     height: 48px;
     text-decoration-line: none;
     margin: 0 auto;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .contact {
-    background: #dbeaf7;
-    padding-top: 80px;
-    padding-bottom: 176px;
-    &__heading {
-      color: #234361;
-      font-weight: bold;
-      font-size: 48px;
-      line-height: 56px;
-      text-align: center;
-      align-items: center;
-    }
-    &__info {
-      color: #425a70;
-      font-weight: 300;
-      font-size: 20px;
-      line-height: 40px;
-      text-align: center;
-      align-items: center;
-      padding-bottom: 128px;
-    }
-    &__list {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      margin: 0;
-    }
-    &__link {
-      position: static;
-      background: white;
-      border-radius: 50%;
-      width: 48px;
-      height: 48px;
-      margin: 24px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    &__mail {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      background: #4da8ff;
-      border-radius: 64px;
-      font-size: 20px;
-      line-height: 40px;
-      padding: 4px 24px 4px 24px;
-      width: 278px;
-      height: 48px;
-      text-decoration-line: none;
+    @media (min-width: $desktop) {
       margin-left: 110px;
     }
+  }
+}
+.contact-style {
+  @media (min-width: $desktop) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 }
