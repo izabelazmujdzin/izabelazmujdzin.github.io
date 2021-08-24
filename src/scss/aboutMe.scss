@@ -9,6 +9,7 @@
     margin: 0 auto;
   }
   @media (min-width: $desktop) {
+    max-width: 100%;
     margin: 0 auto;
     justify-content: center;
   }
@@ -17,6 +18,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    margin-bottom: 40px;
   }
   &__picture-bubble {
     position: absolute;
@@ -66,7 +68,33 @@
 .aboutMe {
   text-align: center;
   align-items: center;
-  margin: 40px 16px 0px 16px;
+  @media (min-width: $desktop) {
+    font-size: 32px;
+    line-height: 40px;
+    max-width: 786px;
+    margin: 0 auto;
+    position: relative;
+    &::before {
+      content: '';
+      background: url('../assets/img/{.svg');
+      display: block;
+      position: absolute;
+      width: 82.94px;
+      height: 254.88px;
+      top: 0;
+      right: 100%;
+    }
+    &::after {
+      content: '';
+      background: url('../assets/img/}.svg');
+      display: block;
+      position: absolute;
+      width: 82.94px;
+      height: 254.88px;
+      top: 0;
+      left: 100%;
+    }
+  }
   &__description {
     color: #234361;
     text-align: center;
@@ -76,10 +104,10 @@
     line-height: 32px;
     &--strong {
       color: #1070ca;
-    }
-    @media (min-width: $desktop) {
-      font-size: 32px;
-      line-height: 40px;
+      @media (min-width: $desktop) {
+        font-size: 32px;
+        line-height: 40px;
+      }
     }
   }
   &__nav {
@@ -113,25 +141,4 @@
   padding: 4px 24px 4px 24px;
   margin: 52px 21px 88px 21px;
   text-decoration-line: none;
-}
-
-@media screen and (min-width: 960px) {
-  .aboutMe::before {
-    content: '';
-    background: url('../assets/img/{.png');
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    width: 82.94px;
-    height: 254.88px;
-  }
-
-  .aboutMe::after {
-    content: '';
-    background: url('../assets/img/}.png');
-    display: none;
-    position: absolute;
-    width: 82.94px;
-    height: 254.88px;
-  }
 }
