@@ -1,11 +1,13 @@
 @import '~normalize.css';
-@import 'skills.scss';
-@import 'aboutMe.scss';
-@import 'projects.scss';
-@import 'contact.scss';
+@import 'modules/skills.scss';
+@import 'modules/aboutMe.scss';
+@import 'modules/projects.scss';
+@import 'modules/contact.scss';
+@import 'modules/hand.scss';
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
