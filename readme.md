@@ -1,4 +1,4 @@
-![cover](https://izabelazmujdzin.github.io/og-portfolio.png))
+![cover](./public/og-portfolio.png)
 
 # IZABELA ŻMUJDZIN - JUNIOR FRONTEND DEVELOPER
 
